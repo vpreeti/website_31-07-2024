@@ -22,7 +22,7 @@ function Tenders() {
   };
 
   return (
-    <div className="container">
+    <div className="container1">
       <div className="section">
         <div className="button-container">
           <button
