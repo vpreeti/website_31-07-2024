@@ -1,0 +1,232 @@
+.mapBox {
+  display: flex;
+  background-color: rgb(159, 235, 234);
+ 
+}
+
+.map-container {
+    width: 50%;
+    /* height: 400px;  */
+    background-color: aqua;
+    overflow: hidden;
+  }
+  
+  /* .map-container svg {
+     width: 100%; 
+     height: auto; 
+
+  } */
+  
+  .district-polygon {
+    fill: gray;
+    stroke: black;
+    stroke-width: 1;
+    
+  }
+  
+  .district-text {
+    fill: white;
+    font-weight: bold;
+    font-size: 10px;
+    text-anchor: middle;
+    /* dominant-baseline: middle; */
+  }
+  
+  .hover-group {
+    pointer-events: none; /* Prevents interaction with hover group */
+  }
+  
+  .hover-background {
+    fill: white;
+  }
+  
+  .hover-text1 {
+    fill: #2f2963;
+    font-weight: bold;
+    font-size: 14px;
+    text-anchor: middle;
+    /* dominant-baseline: middle; */
+    pointer-events: none; /* Prevent text from capturing mouse events */
+  }
+  
+  
+  .muzZone {
+    fill: #B99095;
+    stroke: white;
+    stroke-width: 1.2;
+    transition: stroke 0.3s ease, stroke-width 0.3s ease; /* Smooth transition for stroke changes */
+  }
+  .muzZone:hover {
+    stroke: white; /* Change stroke color on hover */
+    /* stroke-width: 20;  */
+    /* animation: pulse 2s infinite alternate;  */
+    animation: marching-ants 1s infinite linear; /* Apply the marching ants animation */
+  }
+  @keyframes marching-ants {
+    0% {
+      stroke-dasharray: 10, 10; 
+      stroke-dashoffset: 0; 
+    }
+    100% {
+      stroke-dasharray: 5, 5; /* Keep dash pattern */
+      stroke-dashoffset: 50; /* End position to create the movement effect */
+    }
+  }
+  
+  .patnaZone{
+    fill: #C99460;
+    stroke: white;
+    stroke-width: 1.2;
+    transition: stroke 0.3s ease, stroke-width 0.3s ease; /* Smooth transition for stroke changes */
+  }
+  .patnaZone:hover {
+    stroke: white; /* Change stroke color on hover */
+    stroke-width: 1.2; /* Change stroke width on hover */
+    animation: pulse 2s infinite alternate; /* Apply the pulse animation */
+  }
+  .koshiZone
+  {
+    fill:#8CBBBD ;
+    stroke: white;
+    stroke-width: 1.2;
+    transition: stroke 0.3s ease, stroke-width 0.3s ease; /* Smooth transition for stroke changes */
+  }
+  .koshiZone:hover {
+    stroke: white; /* Change stroke color on hover */
+    stroke-width: 1.2; /* Change stroke width on hover */
+    animation: pulse 2s infinite alternate; /* Apply the pulse animation */
+  }
+  .bhagalpurZone{
+    fill:#D48C70 ;
+    stroke: white;
+    stroke-width: 1.2;
+    transition: stroke 0.3s ease, stroke-width 0.3s ease; /* Smooth transition for stroke changes */
+  }
+  .bhagalpurZone:hover {
+    stroke: white; /* Change stroke color on hover */
+    stroke-width: 1.2; /* Change stroke width on hover */
+    animation: pulse 2s infinite alternate; /* Apply the pulse animation */
+  }
+  .gayaZone{
+    fill:#5885AF; 
+    stroke: white;
+    stroke-width: 1.2;
+    transition: stroke 0.3s ease, stroke-width 0.3s ease; /* Smooth transition for stroke changes */
+  }
+  .gayaZone:hover {
+    stroke: white; /* Change stroke color on hover */
+    stroke-width: 1.2; /* Change stroke width on hover */
+    animation: pulse 2s infinite alternate; /* Apply the pulse animation */
+  }
+  @keyframes pulse {
+    0% {
+      stroke-width: 2; /* Starting width */
+    }
+    100% {
+      stroke-width: 2; /* Hover width */
+    }
+  }
+
+
+  .secondPart {
+    width: 50%; 
+    padding: 20px;  
+  }
+  .list-column {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+  }
+  
+  .list-column li {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .list-column li img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 5px;
+  }
+  
+  .list-column li span {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+  } 
+  
+  
+
+  @media  (max-width: 1788px) {
+    .mapBox {
+      flex-direction: row;
+    }
+    .map-container {
+      width: 60%;
+    }
+    .secondPart {
+      width: 40%;
+      /* flex:2; */
+    }
+  } 
+  /* For laptop screens */
+   @media only screen and  (max-width: 1331px) {
+    .mapBox {
+      flex-direction: row;
+    }
+    .map-container {
+      width: 50%;
+    }
+    .secondPart {
+      width: 50%;
+    }
+  } 
+  
+  /* For tablet screens */
+   @media only screen and (max-width: 1096px) {
+    .mapBox {
+      flex-direction: row;
+    }
+    .map-container {
+      width: 50%;
+
+    }
+    .secondPart {
+      width: 50%;
+    }
+    .list-column li img {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 5px;
+    }
+    .list-column li span {
+      font-size: 12px;
+
+    } 
+  } 
+  
+  /* For mobile screens */
+    /* @media only screen and (max-width: 767px) {
+    .mapBox {
+      flex-direction: column;
+    }
+    .map-container {
+      width: 100%;
+    }
+    .secondPart {
+      width: 100%;
+    }
+    .list-column {
+      flex-direction: row;
+    }
+    .list-column li {
+      margin: 20px;
+    }
+  }  */

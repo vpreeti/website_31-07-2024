@@ -1,0 +1,21 @@
+.VMV,.vission,.mission,.value{
+    display: flex;
+    margin: auto;
+}
+
+.vission{
+    background-color: coral;
+    width: 25rem;
+    height: 10rem;
+
+}
+.mission{
+    border-color: darkgreen;
+    width: 25rem;
+    height: 10rem;
+}
+.value{
+    background-color: darkorchid;
+    width: 25rem;
+    height: 10rem;
+}

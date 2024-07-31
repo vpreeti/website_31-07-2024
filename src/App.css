@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+.wraper{
+  height: max-content;
+  
+  /* overflow-x: hidden; */
+  position: relative;
+}
+.navigationBar{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  
+}
+.sliderSection{
+  /* width: 100%; */
+ 
+}
+.stickyMenu{
+  position: fixed;
+  top: 12rem;
+  left: 0;
+  z-index: 9;
+}
+.about{
+  margin-top: 5rem;
+  margin-left: 2.5rem;
+  
+}
+.mapSection{
+  
+  margin: 4rem 5rem;
+
+}
