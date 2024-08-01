@@ -130,14 +130,16 @@ padding: 20px;
 .details-container {
   display: flex;
   align-items: center;
+  
 }
 
 .details-container p {
   margin: 0;
+  color: #6d6d6b;
 }
 
 .details-container p + p::before {
   content: '|';
-  margin: 0 1px;
+  margin: 0 20px;
   color: #000;
 }

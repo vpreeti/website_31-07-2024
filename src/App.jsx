@@ -13,6 +13,7 @@ import Footer from '../components/Footer';
 import StickyMenu from '../components/StickyMenu';
 import AwardsSection from '../components/AwardsSection';
 import Tenders from '../components/tenders';
+import OtherUtilities from '../components/OtherUtilities';
 function App() {
   useEffect(() => {
     AOS.init();
@@ -46,6 +47,10 @@ function App() {
 
         <div className="tenders">
            <Tenders/>
+        </div>
+
+        <div className="OtherUtilities">
+          <OtherUtilities/>
         </div>
 
         <div className="awardSection">
