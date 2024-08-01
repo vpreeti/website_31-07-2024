@@ -68,14 +68,15 @@ padding: 20px;
 .content {
   width: 100%;
   background-color: #fff;
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
   box-sizing: border-box; /* Include padding and border in width calculation */
-  max-height: 300px; /* Set fixed height */
+  max-height: 250px; /* Set fixed height */
   overflow-y: auto; /* Enable vertical scrolling */
   padding-bottom: 60px; /* Add space for the button */
 
   flex-grow: 1; /* Allow content to grow and take up available space */
+  /* background-color: #2f2963; */
   
 }
 
@@ -83,8 +84,9 @@ padding: 20px;
   display: flex;
   align-items: center;
   width: 100%;
-  margin-bottom: 20px;
-  padding: 10px;
+  /* margin-bottom: 10px; */
+  margin: 12px 0px;
+  padding: 3px;
   border-bottom: 1px solid #ddd;
     /* background-color: aqua; */
 }
