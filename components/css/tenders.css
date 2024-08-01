@@ -1,9 +1,12 @@
 .container1 {
   display: flex;
   width: 90%;
-  margin:auto
+  margin:auto;
   /* height: 100vh;  */
- /* background-color: beige; */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Add shadow border */
+  border-radius: 10px; /* Optional: Add rounded corners */
+/* background-color: aquamarine; */
+padding: 20px;
 }
 
 .section {
@@ -13,10 +16,10 @@
   flex-direction: column;
   padding: 20px; /* Padding for internal content */
   box-sizing: border-box; /* Include padding and border in width calculation */
-  height: 500px; /* Set fixed height */
+  /* min-height: 500px; */
   position: relative; /* For absolute positioning of the button */
   /* background-color: aqua; */
-  /* box-shadow: inset 2px 2px 2px 2px rgba(228, 219, 219, 0.5); */
+
 
 }
 
@@ -29,7 +32,7 @@
 .button-container {
   display: flex;
   gap: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 .button {
@@ -47,7 +50,7 @@
 }
 
 .button.active {
-  background-color: #007bff;
+  background-color: #2f2963;
   color: #fff;
 }
 
@@ -71,15 +74,19 @@
   max-height: 300px; /* Set fixed height */
   overflow-y: auto; /* Enable vertical scrolling */
   padding-bottom: 60px; /* Add space for the button */
+
+  flex-grow: 1; /* Allow content to grow and take up available space */
+  
 }
 
-.circular {
+.rowData {
   display: flex;
   align-items: center;
   width: 100%;
   margin-bottom: 20px;
   padding: 10px;
   border-bottom: 1px solid #ddd;
+    /* background-color: aqua; */
 }
 
 .document-icon {
@@ -95,28 +102,28 @@
   object-fit: contain;
 }
 
-.circular-details {
+.details-header {
   display: flex;
   flex-direction: column;
 }
 
 .view-more-button {
   background-color: transparent; /* Initial background color */
-  color: #007bff; /* Text color */
-  border: 2px solid #007bff; /* Border color */
+  color: #2f2963; /* Text color */
+  border: 2px solid #2f2963; /* Border color */
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
   transition: background-color 0.3s, color 0.3s; /* Transition for smooth change */
   position: absolute; /* Position at the bottom */
-  bottom: 20px; /* 20px from the bottom of the section */
+  bottom: 2px; /* 80px from the bottom of the section */
   left: 50%; /* Center horizontally */
   transform: translateX(-50%); /* Center horizontally */
 }
 
 .view-more-button:hover {
-  background-color: #007bff; /* Hover background color */
+  background-color: #2f2963; /* Hover background color */
   color: #fff; /* Hover text color */
 }
 
@@ -131,6 +138,6 @@
 
 .details-container p + p::before {
   content: '|';
-  margin: 0 10px;
+  margin: 0 1px;
   color: #000;
 }
