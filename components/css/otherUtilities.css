@@ -16,7 +16,7 @@
     margin: 0;
     padding: 0;
     gap: 90px; /* Add gap between items */
-    animation: marquee 50s linear infinite;
+    animation: marquee 30s linear infinite;
     animation-play-state: running; /* Start the animation */
   }
   
@@ -50,4 +50,5 @@
   .other-utilities-container:hover .other-utilities-list {
     animation-play-state: paused;
   }
+
   
