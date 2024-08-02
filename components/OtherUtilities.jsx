@@ -18,20 +18,17 @@ const OtherUtilities = () => {
       alt: 'BSPGCL',
       name: 'BSPGCL',
     },
-    {
-        src: 'public/images/logoNBPDCL.png',
-        alt: 'NBPDCL',
-        name: 'NBPDCL',
-      },
+   
       {
-        src: '../public/images/logoSBPDCL.png',
-        alt: 'SBPDCL',
-        name: 'SBPDCL',
+        src: '../public/images/logoPOSOCO.png',
+        alt: 'POSOCO',
+        name: 'POSOCO',
       },
+     
       {
-        src: '../public/images/logoBSPGCL.png',
-        alt: 'BSPGCL',
-        name: 'BSPGCL',
+        src: '../public/images/logoPowergrid.png',
+        alt: 'POWERGRID',
+        name: 'POWERGRID',
       }
     // Add more icons as needed
   ];
