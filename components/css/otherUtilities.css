@@ -18,6 +18,8 @@
   padding: 20px;
   background: #fff;
   margin: 5px 5%; /* Margin as a percentage of the parent container's width */
+  border-top: 5px solid #2f2963; /* Adjust the color as needed */
+
 }
 
 .other-utilities-slider {
