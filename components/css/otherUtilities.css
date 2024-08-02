@@ -44,8 +44,8 @@
 }
 
 .other-utilities-item img {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   object-fit: contain;
   margin-bottom: 5px;
 }
@@ -53,6 +53,8 @@
 .other-utilities-item p {
   font-size: 14px;
   color: #333;
+  text-align: center;
+  font-weight: bold;
 }
 
 /* Stop animation on hover */

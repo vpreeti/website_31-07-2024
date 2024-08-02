@@ -3,6 +3,13 @@ import '../components/css/otherUtilities.css';
 
 const OtherUtilities = () => {
   const icons = [
+    
+      
+    {
+      src: 'images/logoPOSOCO.png',
+      alt: 'NRLDC',
+      name: 'NRLDC',
+    },
     {
       src: 'images/logoNBPDCL.png',
       alt: 'NBPDCL',
@@ -28,10 +35,50 @@ const OtherUtilities = () => {
       alt: 'POWERGRID',
       name: 'POWERGRID',
     },
+    {
+      src: 'images/logoCERC.png',
+      alt: 'CERC',
+      name: 'CERC',
+    },
+    {
+      src: 'images/logoERPC.png',
+      alt: 'ERPC',
+      name: 'ERPC',
+    },
+    {
+      src: 'images/logoBERC.png',
+      alt: 'BERC',
+      name: 'BERC',
+    },
+    
+    {
+      src: 'images/logoPOSOCO.png',
+      alt: 'ERLDC',
+      name: 'ERLDC',
+    },
+    {
+      src: 'images/logoCEA.png',
+      alt: 'CEA',
+      name: 'CEA',
+    },
+    {
+      src: 'images/logoGoB.png',
+      alt: 'ENERGY DEPT.',
+      name: 'ENERGY DEPT.',
+    }
+    ,
+    {
+      src: 'images/logoBSPTCL.png',
+      alt: 'SLDC',
+      name: 'SLDC',
+    }
+    
+    
+
     // Add more icons as needed
   ];
 
-  const repetitions = 3;
+  const repetitions = 4;
   const repeatedIcons = Array.from({ length: repetitions }, () => icons).flat();
 
   return (
